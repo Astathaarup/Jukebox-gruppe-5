@@ -1,81 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="data" href="index.js"> 
-    <link rel="stylesheet" href="/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
-    <script src="loops.js"></script>
-    <title>Betaling</title>
-    <style>
-        * {
-  box-sizing: border-box;
-}
+    <title>Document</title>
 
-.box {
-  float: left;
-  width: 50%;
-  padding: 50px;
-}
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="scripts.js">
+</script>
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} 
-
-    </style>
 </head>
-<body id="JukeboxPrototype">
-    <h1>BETALING</h1>
-<div class="clearfix">
-<div class="box">
-    <h2>MOBILEPAY</h2>
-<div class="link-container-MP">
-      <img src="" height="150">
+<body>
+    <img id="logo" src="MobilePay_logo.svg.png" height="50" alt="MobilePayLogo">
 
-      <a href="https://www.mobilepay.dk" target="_blank" class="billede-knap">
-  <img src="https://www.nykredit.dk/globalassets/billeder/digital-og-devices/v-20250506102825/mp_rgb_notm_logotype-horisontal-blue_1400x788-1.svg" height="150" alt="MobilePay">
+<div class="container">
+    <h2 id="betal">Betal i Mobilepay</h2>
+    <img id="lilleLogo" src="lilleLogo.png" height="250" alt="lilleLogo">
+    <br>
+    <br>
+    <br>
 
-
-</a>
-</div>
-
-    <h2>KORT</h2>
-    <div class="link-container-KORT">
-          <img src="" height="150">
-
-      <a href="https://www.mobilepay.dk" target="_blank" class="billede-knap">
-      <img src="https://naestved-bordtennis.dk/wp-content/uploads/2025/08/20210711155049-60eaf739311093.07048119.webp" height="150">
-
-</a>
-</div>
-
-    <h2>KONTANT</h2>
-<div class="link-container-KONTANT">
-      <img src="" height="150">
-
-      <a href="https://www.mobilepay.dk" target="_blank" class="billede-knap">
-      <img src="https://tik.dk/wp-content/uploads/2017/09/Penge.png" height="150">
-
-    </a>
-    </div>  
+        <div class="entryarea">
+            <input type="text" id="phoneInput" maxlength="8" oninput="validatePhoneNumber(this)" />
+            <div class="labelline">Indtast dit mobilnummer</div>
+        </div>
     </div>
-
-      <div class="box">
-        <h3>DIN KØ:</h3>
-
-        <ul>
-  <li>AC/DC "Highway to hell"</li>
-  <li>Teddy Edelmann "Himmelhunden"</li>
-  <li>Cher "Believe"</li>
-</ul>
-<button onclick="getJsonData()"> Se mere</button>
-
-      </div>
-      </div>
-
+    <br>
+    <br>
+    <br>
+    <div class="buttonarea">
+  <button id="submitButton" disabled onclick="goToNextPage()">Fortsæt</button>
 </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<a href="https://www.w3schools.com/html/html_links.asp" class="back-button">Tilbage til forsiden</a>
+
 </body>
 </html>
