@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jukebox.dk</title>
+<link rel="stylesheet" href="stylesKontant.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <nav class="actions left-actions" aria-label="venstre navigation">
+        <button class="btn ghost" type="button" onclick=""history.back()" aria-label="Gå tilbage">
+            <span class="icon">◀</span>
+            <span class="label">Gå tilbage</span>
+        </button>
+        <a class="btn" href="/" title="Forside">
+            <span class="icon">🏠</span>
+            <span class="label">Forside</span>
+        </a>
+    </nav>
+
+    <nav class="actions right-actions" aria-label="højre navigation">
+        <a class="btn primary" href="/kontakt" title="Kontakt">
+            <span class="icon">✉️</span>
+            <span class="label">Kontakt</span>
+        </a>
+        <a class="btn ghost" href="/om" title="om">
+            <span class="icon">ℹ️</span>
+            <span class="label">Om</span>
+        </a>
+    </nav>
+
+</header>
+
+<main>
+    <h1>Tak for din bestilling- <br> du betaler kontant </h1>
+    <p>Vi har modtaget din ordre, den bliver klargjort i vores system <br> Henvend dig i baren for at gennemføre din betaling</p>
+
+    <h2>Sådan foregår det</h2>
+    <ul>
+        <li>Bekræft dit køb, ved at marker fluebenet nederst på siden</li>
+        <li>Gå op i baren, og henvend dig med dit odrenummer</li>
+        <li>Gennemfør din betaling kontant</li>
+        <li>Vent. Og hør dit nummer</li>
+    </ul>
+
+    <h3>Praktiske oplysninger</h3> 
+    
+    <p class="order-info"> Ordrenummer: #4588</p>
+    <p class="order-info">Betalingssted: Baren</p>
+    <p class="order-info">Dato: Mandag d. 3 November kl 10:17</p>
+</main>
+
+    <div class="accept-section">
+        <label>
+            <input type="checkbox" id="acceptCheckbox">
+            Jeg accepter betingelserne, og betaler kontant i baren
+        </label>
+        <button id="acceptButton" disabled>Godkend</button>
+    </div>   
+    
+    <script>
+        const checkbox = document.getElementById('acceptCheckbox');
+        const button = document.getElementById('acceptButton');
+
+        checkbox.addEventListener('change', function() {
+            button.disabled = !this.checked;
+        });
+    </script>
+
+
+    <br>
+    <br>
+
+    <div class="center">
+        <a href="forside.html"> <button id="TilbageButton">TILBAGE TIL BETALINGSSIDEN</button> </a> 
+    </div>
+    
+
+    <footer>
+        <p>&copy; jukebox.dk</p>
+    </footer>
+
+</body>
+
+</html>
