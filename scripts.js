@@ -5,7 +5,7 @@ function validatePhoneNumber() {
   // kun tal
   input.value = input.value.replace(/\D/g, '');
 
-  // tænd for knap når der er otte tal
+  // tænd for knap når der er otte tal (Telefonnummer)
   button.disabled = input.value.length !== 8;
 }
 
