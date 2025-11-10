@@ -1,0 +1,61 @@
+h1 {
+  color: rgb(197, 65, 32);
+  font-size: 50px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  color: rgb(197, 65, 32);
+  font-family: Impact, Haettenschweiler, "Arial Narrow", sans-serif;
+}
+
+h3 {
+  color: rgb(197, 65, 32);
+  font-size: 30px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ul {
+  color: rgb(197, 65, 32);
+  font-size: 30px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: #ffe4c4;
+}
+
+.billede-knap {
+  display: inline-block;
+  border: none;
+}
+
+.billede-knap img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.billede-knap img:hover {
+  transform: scale(1.05);
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+table,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  color: brown;
+  width: 50%;
+  text-align: center;
+}
