@@ -13,5 +13,24 @@ const songs = [
   { title: "Blinding Lights", artist: "The Weeknd" },
   { title: "Africa", artist: "Toto" },
   { title: "Hallelujah", artist: "Leonard Cohen" },
-  { title: "Sweet Child O’ Mine", artist: "Guns N’ Roses" },
+  { title: "Sweet Child O' Mine", artist: "Guns N' Roses" },
 ];
+
+const showTableBtn = document.getElementById("showTableBtn");
+const songsTable = document.getElementById("songsTable");
+const songsBody = document.getElementById("songsBody");
+
+showTableBtn.addEventListener("click", () => {
+  // Toggle table visibility
+  songsTable.style.display = songsTable.style.display === "none" ? "table" : "none";
+
+  // If table is now visible, populate it
+  if (songsTable.style.display === "table") {
+    songsBody.innerHTML = ""; // Clear previous rows
+    songs.forEach(song => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${song.title}</td><td>${song.artist}</td>`;
+      songsBody.appendChild(row);
+    });
+  }
+});

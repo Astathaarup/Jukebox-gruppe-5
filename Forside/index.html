@@ -71,18 +71,20 @@
   <li>Teddy Edelmann "Himmelhunden"</li>
   <li>Cher "Believe"</li>
 </ul>
-<button onclick="getJsonData()"> Se mere</button>
-    <table>
-      <thead>
-        <tr>
-          <td>Kunstner</td>
-          <td>Sang</td>
-        </tr>
-      </thead>
-      <tbody id="albums"></tbody>
-    </table>
-      </div>
-      </div>
+<button id="showTableBtn">Show Songs</button>
+
+<table id="songsTable" style="display:none;">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Artist</th>
+    </tr>
+  </thead>
+  <tbody id="songsBody">
+    <!-- Rows will be inserted here -->
+  </tbody>
+</table>
+
 
 </div>
 </body>
