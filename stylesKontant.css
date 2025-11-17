@@ -204,3 +204,9 @@ body{
     width: 200px;
     margin-bottom: 15px;
 }
+.order-label, .order-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
